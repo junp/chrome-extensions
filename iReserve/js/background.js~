@@ -1,0 +1,1 @@
+chrome.tts.speak('有货了！', {'rate':1.4,lang:'zh-ch'});
