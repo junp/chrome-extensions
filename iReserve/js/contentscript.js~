@@ -14,16 +14,8 @@ http.get = function(url, callback){
 
 var availabilityJson = 'https://reserve.cdn-apple.com/FR/fr_FR/reserve/iPhone/availability.json'
 
-function fetchStores(){
-	$.ajax({
-		url: storesUrl,
-		type: 'GET',
-		timeout: 5,
-		dataType: 'JSON',
-		success: function(rsp){
-			if(rsp && !$.isPlainObject(rsp)){
-				
-			}
-		}
-	})
-}
+http.get(availabilityJson, function(rsp){
+	console.log(rsp)
+})
+
+
